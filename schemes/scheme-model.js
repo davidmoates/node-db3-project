@@ -1,4 +1,4 @@
-const db = require('../data/dbConfig')
+const db = require('../data/dbConfig.js')
 
 module.exports = {
   find,
@@ -34,5 +34,5 @@ function update(changes, id) {
 }
 
 function remove(id) {
-  return db("scheme").where("id", id).del()
+  return db("schemes").where("id", id).del()
 }

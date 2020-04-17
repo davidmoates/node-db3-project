@@ -1,7 +1,7 @@
 -- Multi-Table Query Practice
 
 -- Display the ProductName and CategoryName for all products in the database. Shows 77 records.
-SELECT "ProductName", "CategoryName" 
+SELECT "ProductName", "CategoryName"
 FROM "Product" as p
 Join "Category" as c
 ON p."CategoryID" = c."ID"
